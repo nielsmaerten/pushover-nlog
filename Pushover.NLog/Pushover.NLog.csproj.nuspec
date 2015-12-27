@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Pushover.NLog</id>
+    <version>0.1.0</version>
+    <authors>Naerten</authors>
+    <owners>Naerten</owners>
+    <projectUrl>https://github.com/nielsmaerten/pushover-nlog</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>An NLog target for Pushover</description>
+    <copyright>Niels Maerten 2015</copyright>
+    <tags>pushover nlog</tags>
+  </metadata>
+</package>

@@ -3,7 +3,6 @@ using NLog;
 using NLog.Config;
 using NLog.Layouts;
 using NLog.Targets;
-using Pushover;
 
 namespace Pushover.NLog
 {
@@ -41,7 +40,7 @@ namespace Pushover.NLog
 
         protected override void Write(LogEventInfo logEvent)
         {
-            Pushover.PushoverClient client = new PushoverClient(AppToken);
+           /* Pushover.PushoverClient client = new PushoverClient(AppToken);
             PushoverMessageBase message = new PushoverMessageBase()
             {
                 Device = Device,
@@ -55,13 +54,13 @@ namespace Pushover.NLog
                 Expiration = EmergencyMessageExpiration,
                 Retry = EmergencyMessageRetryInterval
             };
-            client.Push(message);
+            client.Push(message);*/
         }
 
         /// <summary>
         /// Maps an NLog-LogLevel to a Pushover Priority
         /// </summary>
-        private MessagePriority GetPriority(LogLevel level)
+       /* private MessagePriority GetPriority(LogLevel level)
         {
             switch (level.Ordinal)
             {
@@ -77,6 +76,6 @@ namespace Pushover.NLog
                     return MessagePriority.Lowest;
 
             }
-        }
+        }*/
     }
 }

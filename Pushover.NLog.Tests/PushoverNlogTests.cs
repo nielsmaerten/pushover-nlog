@@ -15,14 +15,22 @@ namespace Pushover.NLog.Tests
         /// </summary>
         public PushoverNLogTests()
         {
+            //ConfigurePushoverTarget(); //Disabled, using nlog.config instead.
+
+            //Get logger
+            logger = LogManager.GetCurrentClassLogger();
+        }
+
+        private static void ConfigurePushoverTarget()
+        {
             //Get logging configuration
             var logConfig = LogManager.Configuration ?? new LoggingConfiguration();
 
             //Initialize PushoverTarget using API keys
             var target = new PushoverTarget()
             {
-                AppToken = "YOUR PUSHOVER APP TOKEN. ref: https://pushover.net ",
-                UserOrGroupKey = "YOUR PUSHOVER USER KEY. ref: https://pushover.net ",
+                AppToken = "YOUR PUSHOVER APP TOKEN",
+                UserOrGroupKey = "YOUR PUSHOVER USER KEY",
 
                 //Optional properties
                 EmergencyMessageRetryInterval = 30,
@@ -42,9 +50,6 @@ namespace Pushover.NLog.Tests
             //Update configuration
             LogManager.Configuration = logConfig;
             LogManager.ReconfigExistingLoggers();
-
-            //Get logger
-            logger = LogManager.GetCurrentClassLogger();
         }
 
         /// <summary>

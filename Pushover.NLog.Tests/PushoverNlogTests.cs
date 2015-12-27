@@ -33,8 +33,6 @@ namespace Pushover.NLog.Tests
                 Title = "${level} event occurred",
                 Url = "http://example.com",
                 UrlTitle = "example.com"
-
-
             };
 
             //Register target with NLog
@@ -44,6 +42,9 @@ namespace Pushover.NLog.Tests
             //Update configuration
             LogManager.Configuration = logConfig;
             LogManager.ReconfigExistingLoggers();
+
+            //Get logger
+            logger = LogManager.GetCurrentClassLogger();
         }
 
         /// <summary>

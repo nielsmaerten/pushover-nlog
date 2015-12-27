@@ -5,7 +5,7 @@ Uses PushoverDotNet: https://github.com/nielsmaerten/pushover-dotnet
 ## Quick start
 Configure using NLog API, or use nlog.config:  
 
-
+```cs
     //Get logging configuration
     var logConfig = LogManager.Configuration ?? new LoggingConfiguration();
 
@@ -33,9 +33,10 @@ Configure using NLog API, or use nlog.config:
     //Update configuration
     LogManager.Configuration = logConfig;
     LogManager.ReconfigExistingLoggers();
-    
+```
 Now, logs with ERROR or FATAL levels will be sent to your Pushover account:
-
+```cs
     var logger = LogManager.GetCurrentClassLogger();
     logger.Error("Error test");
     logger.Fatal("Fatal test");
+```

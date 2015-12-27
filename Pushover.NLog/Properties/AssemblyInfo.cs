@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Pushover.NLog")]
 [assembly: AssemblyDescription("NLog target around Pushover-dotnet")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Niels Maerten")]
 [assembly: AssemblyProduct("Pushover.NLog")]
 [assembly: AssemblyCopyright("Niels Maerten")]
 [assembly: AssemblyTrademark("")]

@@ -1,5 +1,6 @@
 # Pushover.NLog
-An NLog target for Pushover. Built around pushover-dotnet, originally forked from https://github.com/mattmelling/pushover-dotnet
+An NLog target for Pushover.
+Uses PushoverDotNet: https://github.com/nielsmaerten/pushover-dotnet
 
 ## Quick start
 Configure using NLog API, or use nlog.config:  

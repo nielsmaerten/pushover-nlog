@@ -37,8 +37,8 @@
       <HintPath>..\packages\NLog.4.2.3\lib\net45\NLog.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="PushoverDotNet, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\PushoverDotNet.1.0.0\lib\net452\PushoverDotNet.dll</HintPath>
+    <Reference Include="PushoverDotNet, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PushoverDotNet.1.0.1\lib\net452\PushoverDotNet.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
